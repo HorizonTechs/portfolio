@@ -11,15 +11,17 @@ export let workspageContent = `
                     </svg>
                 </a>
             </h2>
-            <div class="thumbnail-container">
-                <img src="img/works1.png" alt="works1" loading="lazy">
-            </div>
-            <div>
-                <p>Simple one page website with collapsible nav-bar for full screen view of content.</p>
-                <p>Ability to switch dark/light themes.</p>
-                <p>Sections are divided in one page and can be navigated using nav-bar.</p>
-                <p>Recommended for small websites
-                with less content.</p>
+            <div class="feature-detail">
+                <div class="thumbnail-container">
+                    <img src="img/works1.png" alt="works1" loading="lazy">
+                </div>
+                <div>
+                    <p>Simple one page website with collapsible nav-bar for full screen view of content.</p>
+                    <p>Ability to switch dark/light themes.</p>
+                    <p>Sections are divided in one page and can be navigated using nav-bar.</p>
+                    <p>Recommended for small websites
+                    with less content.</p>
+                </div>
             </div>
         </div>
         <div class="feature-tile">
@@ -33,13 +35,15 @@ export let workspageContent = `
                     </svg>
                 </a>
             </h2>
-            <div class="thumbnail-container">
-                <img src="img/works2.png" alt="works2" loading="lazy">
-            </div>
-            <div>
-                <p>Website with parallex effect.</p>
-                <p>Sections are divided in one page and can be navigated using nav-bar.</p>
-                <p>Has embeded google map to show store's address</p>
+            <div class="feature-detail">
+                <div class="thumbnail-container">
+                    <img src="img/works2.png" alt="works2" loading="lazy">
+                </div>
+                <div>
+                    <p>Website with parallex effect.</p>
+                    <p>Sections are divided in one page and can be navigated using nav-bar.</p>
+                    <p>Has embeded google map to show store's address</p>
+                </div>
             </div>
         </div>
     </div>`
