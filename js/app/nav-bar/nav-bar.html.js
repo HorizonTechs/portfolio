@@ -1,7 +1,7 @@
 export let navBar=`
 <ul id="nav-bar">
             <li>
-                <a class="tabLinks active" onclick="openPage('home', event)">
+                <a href="#home" class="tabLinks active" onclick="openPage('home', event)">
                     
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" viewBox="0 0 576 512">
@@ -13,7 +13,7 @@ export let navBar=`
                 </a>
             </li>
             <li>
-                <a class="tabLinks" onclick="openPage('about', event)">
+                <a href="#about" class="tabLinks" onclick="openPage('about', event)">
                     
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img"
@@ -26,7 +26,7 @@ export let navBar=`
                 </a>
             </li>
             <li>
-                <a class="tabLinks" onclick="openPage('works', event)">
+                <a href="#works" class="tabLinks" onclick="openPage('works', event)">
                     
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
                             data-icon="laptop-code" class="svg-inline--fa fa-laptop-code fa-w-20" role="img"
@@ -39,7 +39,7 @@ export let navBar=`
                 </a>
             </li>
             <li>
-                <a class="tabLinks" onclick="openPage('contact', event)">
+                <a href="#contact" class="tabLinks" onclick="openPage('contact', event)">
                     
                         <svg aria-hidden="true" focusable="false" data-prefix="far"
                             data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img"

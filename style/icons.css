@@ -10,3 +10,9 @@
 .fa-envelope{
     width: 1.6rem;
 }
+
+.fa-external-link-alt {
+    width: 1.5rem;
+    float: right;
+    color: var(--secondry1);
+}

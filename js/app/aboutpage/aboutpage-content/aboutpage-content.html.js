@@ -1,6 +1,6 @@
 const companyName="Horizon Techs";
 
-export let aboutPageContent=`<div class="page-content">
+export let aboutPageContent=`<div id="parallex-following-content" class="page-content">
     <div class="feature-tile">
         <div>
             <p>Established in 2021 during <a href="https://www.covidvisualizer.com/" target="_blank">COVID-19</a> (Corona Virus Disease 2019) to help people spread their business.

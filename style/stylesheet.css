@@ -19,44 +19,50 @@
 }
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0;
 }
 
 body{
-    margin:0;
     font-family: sans-serif;
     overflow: hidden;
     background-color: var(--primary1);
     color:var(--secondry1);
 }
 
+a{
+    text-decoration: none;
+}
+
 /* App-root*/
 #app-root{
     height:100vh;
-    padding: 0;
-    margin:0;
 }
 /* Nav bar styles */
 #nav-bar{
-    z-index:1;
-    position: fixed;
-    left:0;
-    bottom:-20vh;
-    list-style-type: none;
-    width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    padding:0.5rem 0;
-    margin:0;
-    transition: bottom 0.6s;
-    font-size: 0.7rem;
-    background-color: var(--primary3);
-    box-shadow: 0px -5px 10px var(--shadow1)
+    position: fixed;
+    height: 3.7rem;
+    bottom: 0;
+    width: 100%;
+    background: var(--primary2);
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 6px var(--shadow);
+    transition: bottom 0.6s, top 0.6s;
+    align-items: flex-end;
 }
 
 #nav-bar li{
+    list-style-type: none;
     text-align: center;
     cursor: pointer;
     animation: animate 5s linear infinite;
+}
+
+#nav-bar a{
+    color:var(--secondry1);
 }
 
 #nav-bar a svg{
@@ -77,7 +83,7 @@ body{
     justify-content: space-between;
     width: 3.6rem;
     height: 1.8rem;
-    margin-top: 0.5rem;
+    top: 1rem;
     right: 0.6rem;
     color: yellow;
     background: black;
@@ -100,6 +106,25 @@ body{
     transform: translateX(1.8rem);
 }
 
+@media screen and (orientation:landscape),
+    screen and (min-width: 768){
+    #nav-bar{
+        top:0;
+        width: 30rem;
+        right:0;
+        padding-right: 1rem;
+        align-items: center;
+    }
+
+    #nav-bar li a{
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav-bar li a svg{
+        display: none;
+    }
+
+}
 
 /* Logo style and animation */
 #brand-logo{
@@ -167,6 +192,8 @@ body{
 /* Home page content */
 .page-content{
     padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 #homepage-content{
@@ -196,9 +223,25 @@ body{
     border-bottom: 1px solid var(--primary4);
 }
 
+.feature-detail{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feature-detail>div:last-child{
+    width: 40rem;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
 .feature-tile .thumbnail-container{
     overflow: hidden;
     width:100%;
+    max-width:30rem;
 }
 
 .feature-tile img{
@@ -264,11 +307,11 @@ body{
     z-index: 1;
     background: linear-gradient(to top, rgb(24,24,24), transparent);
 }
-.page-content {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding: 2.5rem;
+#parallex-following-content {
     z-index: 0;
     background-color: var(--primary1);
 }
 
+#contact{
+    padding: 2rem;
+}
