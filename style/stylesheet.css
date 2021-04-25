@@ -149,10 +149,15 @@ a{
 }
 
 /* Welcome Circle */
+.welcome-circle-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
 #welcome-circle{
     height: 16rem;
     width: 16rem;
-    margin: 25vh auto;
+    margin: auto;
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
