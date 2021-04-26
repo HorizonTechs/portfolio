@@ -25,7 +25,7 @@ function main() {
         })
         .then(message => {
             setTimeout(message => {
-                document.getElementById("welcome-circle").style.display = "block";
+                document.getElementById("welcome-circle").style.display = "flex";
                 arorizeSession = arorizeCircle();
                 console.log(message);
                 console.log("circle moved");
