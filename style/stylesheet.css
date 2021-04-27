@@ -325,3 +325,7 @@ a{
 #contact{
     padding: 2rem;
 }
+
+.mail-id{
+    color: rgb(119, 119, 211);
+}
