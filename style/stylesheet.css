@@ -108,6 +108,14 @@ a{
     transform: translateX(1.8rem);
 }
 
+.list-arrow li{
+    list-style: none;
+}
+
+.list-arrow li::before{
+    content: "\00BB\ ";
+}
+
 @media screen and (orientation:landscape),
     screen and (min-width: 768){
     #nav-bar{
