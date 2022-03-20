@@ -1,7 +1,26 @@
 export let homepageContent=`
 <div id="homepage-content" class="page-content">
-                <hr>
-                <span>Get your own website with high quality features</span>
+                <hr/>
+                <div class="feature-tile">
+                    <h2><span class="redTxt">Top</span> reasons why you need a website</h2>
+                    <div class="feature-detail">
+                        <ul class="list-arrow">
+                            <li>A Website Proves Your Brand Credibility</li>
+                            <li>Businesses with a Website are Easily Accessible</li>
+                            <li>A website builds a relationship</li>
+                            <li>You can Showcase Your Products/Services the Best Way Possible</li>
+                            <li>A website makes your brand more visible</li>
+                            <li>Easy to provide exact location of your business using map</li>
+                            <li>People still judge brand's credibility by looks, it is possible
+                            to present your business beautifully through websites</li>
+                            <li>A website is an integral part of online marketing.</li>
+                            <li>You can strategically target your customers through a website</li>
+                            <li>All of your competitors are already having a website</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="margin-top: 2rem"/>
+                <span>Get your own website with high quality features here</span>
                 <div class="feature-tile">
                     <h2><span class="redTxt">Responsive</span> Design</h2>
                     <div class="feature-detail">
