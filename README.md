@@ -7,17 +7,23 @@ flowchart TD
     classDef database fill:#fbb,stroke:#333,stroke-width:2px;
 
     %% Elements
-    User((User/Client)) ::: client
-    Gateway[API Gateway / Load Balancer] ::: bff
+    User((User/Client))
+    Gateway[API Gateway / Load Balancer]
     
     subgraph K8s [Kubernetes Cluster]
-        Auth[Auth Service] ::: service
-        Order[Order Service] ::: service
-        Inventory[Inventory Service] ::: service
+        Auth[Auth Service]
+        Order[Order Service]
+        Inventory[Inventory Service]
     end
 
-    Cache[(Redis Cache)] ::: database
-    DB[(PostgreSQL Primary)] ::: database
+    Cache[(Redis Cache)]
+    DB[(PostgreSQL Primary)]
+
+    %% Apply Styles Safely
+    class User client;
+    class Gateway bff;
+    class Auth,Order,Inventory service;
+    class Cache,DB database;
 
     %% Connections
     User -->|HTTPS| Gateway
